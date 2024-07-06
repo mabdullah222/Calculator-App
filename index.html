@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-row justify-center align-center bg-neutral-200">
+    <div class="flex flex-col space-y-3 min-w-[300px] bg-white min-h-[70vh] p-3 rounded-lg translate-y-[100px] drop-shadow-2xl">
+        <div class="flex flex-col space-y-2 grow">
+            <input type="text" class="h-[50%] text-right focus:outline-blue-200 font-bold" id="expression">
+            <div id="answer" class="text-right h-[50%] font-semibold text-2xl" class="grow"></div>
+        </div>
+        <div class="grid grid-cols-4 gap-3">
+            <button class="rounded-lg p-3 bg-rose-600 text-white font-bold" id="back">&larr;</button>
+            <button class="rounded-md p-3 bg-orange-600 text-white font-bold" id="clear">C</button>
+            <button class="buttons rounded-md p-3 bg-yellow-500 text-white font-bold" >%</button>
+            <button class="buttons rounded-md p-3 bg-yellow-500 text-white font-bold" >÷</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >7</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >8</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >9</button>
+            <button class="buttons rounded-md p-3 bg-yellow-500 text-white font-bold" >x</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >4</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >5</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >6</button>
+            <button class="buttons rounded-md p-3 bg-yellow-500 text-white font-bold" >+</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >1</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >2</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >3</button>
+            <button class="buttons rounded-md p-3 bg-yellow-500 text-white font-bold" >-</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >0</button>
+            <button class="buttons rounded-md drop-shadow-md p-3 bg-gray-100" >.</button>
+            <button class="rounded-lg col-span-2 bg-blue-200" id="equals">=</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
